@@ -57,13 +57,7 @@ export const useBottomSheetDynamicSnapPoints = (
     [animatedContentHeight]
   );
 
-  //#region effects
-  useEffect(() => {
-    console.warn(
-      '`useBottomSheetDynamicSnapPoints` will be deprecated in the next major release! please use the new introduce prop `enableDynamicSizing`.'
-    );
-  }, []);
-  //#endregion
+
   return {
     animatedSnapPoints,
     animatedHandleHeight,
